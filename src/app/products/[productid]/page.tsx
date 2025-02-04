@@ -1,9 +1,15 @@
 import React from 'react'
 
-const page = ({params}) => {
+interface BlogPageProbs{
+    params:{
+        productid:string,
+    }
+}
+const Page :React.FC<BlogPageProbs> = ({params}) => {
+
   return (
     <div>product number {params.productid}</div>
   )
 }
 
-export default page
+export default Page
